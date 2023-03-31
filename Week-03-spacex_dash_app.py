@@ -78,9 +78,8 @@ def update_graph(site_dropdown):
         fig = px.pie(
             all_sites,
             names='Launch Site',
-            title='Total Success Launches by All Sites',
-            hole=.2,
-            color_discrete_sequence=px.colors.sequential.RdBu
+            title='Total Success Launches by Sites',
+            hole=.2
         )
     else:
         df = spacex_df.loc[spacex_df['Launch Site'] == site_dropdown]
